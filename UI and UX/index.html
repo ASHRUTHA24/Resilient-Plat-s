@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>JOIN US</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+	<link rel="icon" type="image/png" href="logo final.png">
+</head>
+
+<body>
+	<div id="video-container">
+        <video autoplay muted loop id="bg-video">
+            <source src="bg_vdo.mp4" type="video/mp4">
+        </video>
+
+
+<div class="container" id="container"> 
+
+	<div class="form-container sign-up-container">
+		<form action="#">
+
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" required/>
+			<input type="email" placeholder="Email" required/>
+			<input type="password" placeholder="Password" required/>
+			<div id="captcha" class="form_div">
+                <div class="preview"></div>
+                <div class="captcha_form">
+                    <input type="text" id="captcha_form" class="form_input_captcha" placeholder="Enter Captcha" required>
+				</div>
+					<button class="captcha_refersh" >
+                        Refersh Captcha
+                    </button>
+					<button class="form_button">Submit Captcha</button>
+                
+            </div>
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<div id="captcha1" class="form_div1">
+				<div class="preview1"></div>
+				<div class="captcha_form1">
+					<input type="text" id="captcha_form1" class="form_input_captcha1" placeholder="Enter Captcha" required>
+				</div>
+				<button class="captcha_refersh1">Refresh Captcha</button>
+				<button class="form_button1">Submit Captcha</button>
+			</div>
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+
+		<div class="overlay">
+
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal details</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hi There!</h1>
+				<p>Enter your personal details to open an account with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<script src="script1.js" charset="utf-8"></script>
+<script src="script2.js" charset="utf-8"></script>
+</body>
+
+</html>
+

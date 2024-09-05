@@ -1,0 +1,318 @@
+/* * {
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .iframely-embed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background: white;
+  }
+  
+  #app {
+    z-index: 100;
+  
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding-bottom: 4vmin;
+    height: 90vh;
+    width: 100%;
+    background: #ede8e2;
+    color: #3a3535;
+  }
+  
+  body {
+    display: grid;
+    padding: 3vmin;
+    background: #e6ded7;
+    overflow: hidden
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+  
+  .title {
+    padding-left: 1em;
+    grid-column: 1 / -1;
+    grid-row: 1;
+  
+    font-family: "Prata", serif;
+    font-size: 5vw;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  @keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  
+  @keyframes outer-left {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: none;
+    }
+  }
+  
+  @keyframes inner-left {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: none;
+    }
+  }
+  
+  .cafe,
+  .mozart {
+    animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+  }
+  
+  .title-inner {
+    display: inline-block;
+    animation: inner-left 1s 1s ease both;
+  }
+  
+  .cafe-inner {
+    display: inline-block;
+    animation: inner-left 1s 1s ease both,
+      text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  }
+  
+  .mozart-inner {
+    animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30%;
+    font-weight: 500;
+    font-style: italic;
+
+  }
+  
+  .title {
+    animation: outer-left 1s 1s ease both;
+  }
+  
+  .cafe {
+    > .cafe-inner {
+      display: inline-block;
+    }
+  }
+  
+  .mozart {
+    display: inline-block;
+  }
+  
+  .image {
+    grid-row: 1;
+    grid-column: 2;
+   margin-left: -2rem;
+    opacity: 0.7;
+    overflow: hidden;
+ 
+  
+    animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+  
+    @keyframes image-in {
+      from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      }
+      to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+  
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+  }
+  
+  body:active * {
+    animation: none !important;
+  }
+  .image:hover .button {
+    display: inline-block; 
+  }
+  .button {
+    position: absolute;
+    bottom: 10%; 
+    left: 50%; 
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    text-decoration: none;
+    display: none;
+    
+  }*/
+  * {
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .iframely-embed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background: white;
+  }
+  
+  #app {
+    z-index: 100;
+  }
+  
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding-bottom: 4vmin;
+    height: 90vh;
+    width: 100%;
+    background: #ede8e2;
+    color: #3a3535;
+  }
+  
+  body {
+    display: grid;
+    padding: 3vmin;
+    background: #e6ded7;
+    overflow: hidden;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+  
+  .title {
+    padding-left: 1em;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    font-family: "Prata", serif;
+    font-size: 5vw;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  @keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  
+  @keyframes outer-left {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: none;
+    }
+  }
+  
+  @keyframes inner-left {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: none;
+    }
+  }
+  
+  .cafe,
+  .mozart {
+    animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+  }
+  
+  .title-inner {
+    display: inline-block;
+    animation: inner-left 1s 1s ease both;
+  }
+  
+  .cafe-inner {
+    display: inline-block;
+    animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  }
+  
+  .mozart-inner {
+    animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30%;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .title {
+    animation: outer-left 1s 1s ease both;
+  }
+  
+  .cafe {
+    > .cafe-inner {
+      display: inline-block;
+    }
+  }
+  
+  .image {
+    grid-row: 1;
+    grid-column: 2;
+    margin-left: -2rem;
+    opacity: 0.7;
+    overflow: hidden;
+    animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+  }
+  
+  @keyframes image-in {
+    from {
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  body:active * {
+    animation: none !important;
+  }
+  button {
+    border-radius: 20px;
+    border: 1px solid #f2eee3;
+    background-color: #f2eee3;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    border-color: red;
+  }
+   
+  
